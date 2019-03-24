@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Shopping Cart</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Germania+One|Oswald:300" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Custom  -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Comp Name</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="services.html">Services</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Categories
+          </a>
+            <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="item.html">Gifts</a>
+              <a class="dropdown-item" href="item.html">Liqour</a>
+              <a class="dropdown-item" href="item.html">Alcohol Bevarages</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Courier Services</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="cart.html"><i class="fa fa-2x fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  <!-- Catalogue -->
+  <section id="item-description" class="bg-light pt-3">
+  <!-- Page Content -->
+  <div class="container">
+
+      <!-- Breadcrumbs -->  
+      <h1 class="mb-4">Shopping Cart</h1>
+      <a href="index.html" class="btn btn-info btn-xlg"><i class="fas fa-arrow-left pr-3"></i> Back to Shopping</a>
+
+        <div class="row">
+
+          <div class="col-lg-8">
+            <div class="cart-table py-4">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Item</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                <a href="item.html">
+                                    <img style="height:100px" src="img/products/jack-daniels.jpg" alt="Product Image" class="img-fluid">
+                                    <p>Jack Daniel 700Ml</p>
+                                </a>
+                            </th>
+                            <td>
+                                <strong class="text-uppercase">Kes. 3,000</strong>
+                            </td>
+                            <td>
+                                <div class="pay">
+                                    <input type="number" placeholder="1">
+                                </div>
+                            </td>
+                            <td>
+                                <strong class="text-uppercase">Kes. 3,000</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <a href="item.html">
+                                    <img style="height:100px" src="img/products/jameson-1.jpg" alt="Product Image" class="img-fluid">
+                                    <p>Jameson 1Litre Bootle</p>
+                                </a>
+                            </th>
+                            <td>                                
+                                <strong class="text-uppercase">Kes. 2,200</strong>
+                            </td>
+                            <td>
+                                <div class="pay">
+                                    <input type="number" placeholder="1">
+                                </div>
+                            </td>
+                            <td>
+                                <strong class="text-uppercase">Kes. 2,200</strong>
+                            </td>
+                          </tr>
+                        <tr>
+                            <th scope="row">
+                                <a href="item.html">
+                                    <img style="height:100px" src="img/products/red_label-1.jpg" alt="Product Image" class="img-fluid">
+                                    <p>Johnnie Walker Red Label Whisky 750Ml</p>
+                                </a>
+                            </th>
+                            <td>                                
+                                <strong class="text-uppercase">Kes. 1,200</strong>
+                            </td>
+                            <td>                                
+                                <div class="pay">
+                                    <input type="number" placeholder="1">
+                                </div>
+                            </td>
+                            <td>                                
+                                <strong class="text-uppercase">Kes. 1,200</strong>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+          </div>
+          <!-- /.col-lg-8 -->
+    
+          <div class="col-lg-4">
+    
+            <div class="row">
+                <div class="cart-summary p-4">
+                    <div class="card">
+                        <h4 class="card-header">Cart Summary</h4>
+                        <div class="card-body">
+                            <div class="delivery-dropdown">
+                                <p>
+                                    <button class="btn btn-primary btn-xlg" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                        Add Delivery Details <i class="fas fa-caret-down"></i>
+                                    </button>
+                                </p>
+                                <div class="collapse" id="collapseExample">
+                                    <p>Enter your location to get a delivery estimate.</p>
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="selectCountry" class="text-uppercase">Country</label>
+                                            <select class="form-control" id="selectCountry">
+                                                <option>Kenya</option>
+                                                <option>Uganda</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="selectLocation">Estate/Location</label>
+                                            <select class="form-control" id="selectLocation">
+                                                <option>CBD</option>
+                                                <option>Westlands</option>
+                                                <option>Parklands</option>
+                                                <option>Kileleshwa</option>
+                                                <option>Kangemi</option>
+                                                <option>Ngo'ng Road</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="text-uppercase">Physical Address/Building</label>
+                                            <input type="text" class="form-control form-control">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="cart-summary-content">
+                                <h6>
+                                    Subtotal
+                                    <p class="float-right text-uppercase">Kes. 4, 800.00</p>
+                                </h6>
+                                <div class="clearfix"></div>
+                                <h6>
+                                    Delivery
+                                    <p class="float-right text-uppercase">Kes. 100.00</p>
+                                </h6>
+                                <div class="clearfix"></div>
+                                <h6>
+                                    Tax
+                                    <p class="float-right text-uppercase">Kes. 0.00</p>
+                                </h6>
+                            </div>
+                            <hr>
+                            <h4>
+                                Order Total <strong class="text-uppercase pl-4">Kes. 4,900</strong>
+                            </h4>
+                            <hr>
+                            <button class="btn btn-secondary btn-xlg text-uppercase">Proceed To Checkout</button>
+                            <div class="py-3 text-center">
+                                <i class="fas fa-lock"></i>
+                                <p class="text-uppercase">Safe &amp; Secure</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!---- /. Cart Summary -->
+            </div>
+            <!-- /.row -->
+    
+          </div>
+          <!-- /.col-lg-9 -->
+    
+        </div>
+        <!-- /.row -->
+    
+      </div>
+      <!-- /.container -->
+    </section>
+
+
+    <!-- /. Connect  -->
+    <section class="bg-gradient-warning py-4" id="connect">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 section-header text-center py-2">
+              <h2>Connect with our Social Marketplace</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 text-center py-3">
+              <ul class="list-inline list-social">
+                <li class="list-inline-item social-twitter">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item social-facebook">
+                  <a href="#">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item social-instagram">
+                  <a href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- /. Newletter Signup -->
+      <section class="bg-light py-5" id="subscribe">
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-12 section-header text-center py-2">
+                <h2>Sign up for our Newsletters &amp; Promotions</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-center py-2">
+                <form>
+                  <input type="email" placeholder="Enter Email..." required>
+                  <button type="submit" class="btn-subscribe">Subscribe</button>
+                </form>
+              </div>
+            </div>
+        </div>
+      </section>
+
+    <!-- /.Footer -->
+    <footer id="main-footer" class="bg-dark">
+        <div class="col footer-cols">
+            <div class="row">
+          
+              <div class="col-md-3 text-center text-white">
+                <ul class="list-inline social-buttons">
+                  <li>Follow Us</li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+      
+                <div class="col-md-3">
+                    <ul>
+                        <li>Join Us</li>
+                        <li>
+                          <a href="#">Find a Store</a>
+                        </li>
+                        <li>
+                          <a href="#">Our Vendors</a>
+                        </li>
+                        <li>
+                          <a href="#">Our Partners</a>
+                        </li>
+                        <li>
+                          <a href="#">Vendor Login</a>
+                        </li>
+                        <li>
+                          <a href="#">Jobs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li>Help</li>
+                        <li>
+                          <a href="#">How to Shop</a>
+                        </li>
+                        <li>
+                          <a href="#">About us</a>
+                        </li>
+                        <li>
+                          <a href="#">FAQ's</a>
+                        </li>
+                      </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li>Legal</li>
+                        <li>
+                          <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                          <a href="#">Terms &amp; Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col footer-bottom text-center">
+                Copyright &copy; 2019 Comp Name
+        </div>
+    </footer>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Main Js -->
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>
