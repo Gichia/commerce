@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Jameson - Get Fast &amp; Convinient Delivery</title>
+  <title>Shopping Cart</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -75,61 +75,158 @@
   <div class="container">
 
       <!-- Breadcrumbs -->  
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Johnnie Walker Red Label Whisky 750Ml</li>
-        </ol>
-      </nav>
+      <h1 class="mb-4">Shopping Cart</h1>
+      <a href="index.html" class="btn btn-info btn-xlg"><i class="fas fa-arrow-left pr-3"></i> Back to Shopping</a>
 
         <div class="row">
 
-          <div class="col-lg-6">
-            <div class="item-image py-4">
-                <img src="img/products/red_label-1.jpg" alt="" class="img-fluid">
+          <div class="col-lg-8">
+            <div class="cart-table py-4">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Item</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                <a href="item.html">
+                                    <img style="height:100px" src="img/products/jack-daniels.jpg" alt="Product Image" class="img-fluid">
+                                    <p>Jack Daniel 700Ml</p>
+                                </a>
+                            </th>
+                            <td>
+                                <strong class="text-uppercase">Kes. 3,000</strong>
+                            </td>
+                            <td>
+                                <div class="pay">
+                                    <input type="number" placeholder="1">
+                                </div>
+                            </td>
+                            <td>
+                                <strong class="text-uppercase">Kes. 3,000</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <a href="item.html">
+                                    <img style="height:100px" src="img/products/jameson-1.jpg" alt="Product Image" class="img-fluid">
+                                    <p>Jameson 1Litre Bootle</p>
+                                </a>
+                            </th>
+                            <td>                                
+                                <strong class="text-uppercase">Kes. 2,200</strong>
+                            </td>
+                            <td>
+                                <div class="pay">
+                                    <input type="number" placeholder="1">
+                                </div>
+                            </td>
+                            <td>
+                                <strong class="text-uppercase">Kes. 2,200</strong>
+                            </td>
+                          </tr>
+                        <tr>
+                            <th scope="row">
+                                <a href="item.html">
+                                    <img style="height:100px" src="img/products/red_label-1.jpg" alt="Product Image" class="img-fluid">
+                                    <p>Johnnie Walker Red Label Whisky 750Ml</p>
+                                </a>
+                            </th>
+                            <td>                                
+                                <strong class="text-uppercase">Kes. 1,200</strong>
+                            </td>
+                            <td>                                
+                                <div class="pay">
+                                    <input type="number" placeholder="1">
+                                </div>
+                            </td>
+                            <td>                                
+                                <strong class="text-uppercase">Kes. 1,200</strong>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+            <hr>
           </div>
-          <!-- /.col-lg-3 -->
+          <!-- /.col-lg-8 -->
     
-          <div class="col-lg-6">
+          <div class="col-lg-4">
     
             <div class="row">
-                <div class="item-description p-4">
-                    <h1 class="text-uppercase">Johnnie Walker Red Label Whisky 750Ml</h1>
-                    <hr>
-                    <div class="content">
-                      <small class="float-right"><strong>Units Left:</strong> 50</small>
-                      <div class="clearfix"></div>
-                      <h4>Description:</h4>
-                      <p>
-                        Johnnie Walker Red Label is our Pioneer Blend, the one that has introduced our whisky to the world. Highly versatile and with universal appeal, it has a bold, characterful flavour that shines through even when mixed. Johnnie Walker Red Label is now the best-selling Scotch Whisky around the globe. Perfect for parties and get-togethers, at home or going out.
-                      </p>
+                <div class="cart-summary p-4">
+                    <div class="card">
+                        <h4 class="card-header">Cart Summary</h4>
+                        <div class="card-body">
+                            <div class="delivery-dropdown">
+                                <p>
+                                    <button class="btn btn-primary btn-xlg" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                        Add Delivery Details <i class="fas fa-caret-down"></i>
+                                    </button>
+                                </p>
+                                <div class="collapse" id="collapseExample">
+                                    <p>Enter your location to get a delivery estimate.</p>
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="selectCountry" class="text-uppercase">Country</label>
+                                            <select class="form-control" id="selectCountry">
+                                                <option>Kenya</option>
+                                                <option>Uganda</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="selectLocation">Estate/Location</label>
+                                            <select class="form-control" id="selectLocation">
+                                                <option>CBD</option>
+                                                <option>Westlands</option>
+                                                <option>Parklands</option>
+                                                <option>Kileleshwa</option>
+                                                <option>Kangemi</option>
+                                                <option>Ngo'ng Road</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="text-uppercase">Physical Address/Building</label>
+                                            <input type="text" class="form-control form-control">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="cart-summary-content">
+                                <h6>
+                                    Subtotal
+                                    <p class="float-right text-uppercase">Kes. 4, 800.00</p>
+                                </h6>
+                                <div class="clearfix"></div>
+                                <h6>
+                                    Delivery
+                                    <p class="float-right text-uppercase">Kes. 100.00</p>
+                                </h6>
+                                <div class="clearfix"></div>
+                                <h6>
+                                    Tax
+                                    <p class="float-right text-uppercase">Kes. 0.00</p>
+                                </h6>
+                            </div>
+                            <hr>
+                            <h4>
+                                Order Total <strong class="text-uppercase pl-4">Kes. 4,900</strong>
+                            </h4>
+                            <hr>
+                            <button class="btn btn-secondary btn-xlg text-uppercase">Proceed To Checkout</button>
+                            <div class="py-3 text-center">
+                                <i class="fas fa-lock"></i>
+                                <p class="text-uppercase">Safe &amp; Secure</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="features">
-                      <h4>What you get:</h4>
-                      <ul>
-                        <li>Feature one</li>
-                        <li>Feature two</li>
-                        <li>Feature three</li>
-                        <li>Feature four</li>
-                      </ul>
-                    </div>
-                    <div class="price">
-                      <h5>Price:</h5>
-                      <h2 class="text-uppercase"><strong>Kes 1,800.00</strong></h2>
-                    </div>
-                    <div class="payment-img py-3">
-                      <h6><strong>Buy Online</strong></h6>
-                      <img src="img/lipampesa.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="pay py-3">
-                      <h4>Order Now:</h4>
-                      <form>
-                        <input type="number" placeholder="1">
-                        <button type="submit" class="btn btn-outline-warning btn-cart tetxt-uppercase">Add to Cart</button>
-                      </form>
-                    </div>
-                </div>
+                </div> <!---- /. Cart Summary -->
             </div>
             <!-- /.row -->
     
