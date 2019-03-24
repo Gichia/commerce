@@ -1,0 +1,55 @@
+/* 
+  Global Styling & Overrides
+*/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  @include body-font;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.btn-xlg {
+  min-width: 200px !important;
+}
+
+
+.bg-gradient-primary {
+  background-color: $primary;
+  background-image: linear-gradient(to right, darken($primary, 15%), lighten($primary, 10%));;
+  background-size: cover;
+}
+
+.bg-gradient-success {
+  background-color: $success;
+  background-image: linear-gradient(180deg, $success 10%, darken($success, 15%) 100%);
+  background-size: cover;
+}
+
+.bg-gradient-info {
+  background-color: $info;
+  background-image: linear-gradient(180deg, $info 10%, darken($info, 15%) 100%);
+  background-size: cover;
+}
+
+.bg-gradient-warning {
+  background-color: $warning;
+  background-image: linear-gradient(180deg, $warning 10%, darken($warning, 15%) 100%);
+  background-size: cover;
+}
+
+.bg-gradient-danger {
+  background-color: $danger;
+  background-image: linear-gradient(180deg, $danger 10%, darken($danger, 15%) 100%);
+  background-size: cover;
+}
+
+.bg-gradient-secondary {
+  background-color: $secondary;
+  background-image: linear-gradient(90deg, $secondary 10%, darken($secondary, 15%) 100%);
+  background-size: cover;
+}

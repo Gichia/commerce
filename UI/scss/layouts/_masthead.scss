@@ -1,0 +1,21 @@
+#masthead {
+    min-height: 500px;
+    .intro-cards {
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.4s;
+            i {
+                transition: 0.4s;
+            }
+            &:hover {
+                transform: translateY(-10px);
+                -webkit-transform: translateY(-10px);
+                -moz-transform: translateY(-10px);
+                i {
+                    font-size: 60px;
+                }
+            }
+        }
+    }
+}

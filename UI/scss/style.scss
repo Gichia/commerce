@@ -1,0 +1,22 @@
+/**
+    Main Style Imports
+**/
+
+// Customs Colors
+@import "./layouts/variables";
+
+// Import Bootstrap
+@import "../vendor/bootstrap/scss/bootstrap.scss";
+
+// Layouts
+@import "./layouts/mixins";
+@import "./layouts/global";
+@import "./layouts/navbar";
+@import "./layouts/home-page";
+@import "./layouts/masthead";
+@import "./layouts/footer";
+
+// Components
+@import "./components/utilities";
+@import "./components/cards";
+@import "./components/catalogoue-page";

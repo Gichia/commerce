@@ -1,0 +1,23 @@
+/* Footer */
+footer {
+    .footer-cols {
+        padding: 2rem;
+        font-size: 14px;
+        ul {
+            list-style: none;
+            li:first-child {
+                color: $white;
+                font-size: 1.2rem;
+                padding-bottom: 0.5rem;
+                border-bottom: $primary solid 1px;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .footer-bottom {
+        background: $black;
+        padding: 1rem;
+    }
+
+}
+  
